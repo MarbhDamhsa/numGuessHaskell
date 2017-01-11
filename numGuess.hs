@@ -13,6 +13,7 @@ main = do
 doGuessing num = do
     putStrLn "Enter your guess:"
     guess <- getLine
+    --converts guess from string to int, storing the result in guessNum 
     let guessNum = read guess
     if guessNum < num
         then do putStrLn "Too low!"
